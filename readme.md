@@ -1,3 +1,5 @@
+![Trivy - Security Scan](https://github.com/adchiche/BTS_DEVSECOPS_CYBER_1
+/actions/workflows/trivy-scan.yml/badge.svg)
 # 🕵️‍♀️ TP DevSecOps : Projet Node.js vulnérable
 
 ## Bienvenue !
