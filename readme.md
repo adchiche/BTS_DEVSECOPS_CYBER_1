@@ -1,5 +1,7 @@
-![Trivy - Security Scan](https://github.com/adchiche/BTS_DEVSECOPS_CYBER_1
-/actions/workflows/trivy-scan.yml/badge.svg)
+![Trivy - Security Scan](https://github.com/adchiche/BTS_DEVSECOPS_CYBER_1/actions/workflows/trivy-scan.yml/badge.svg)
+![Snyk - Security Scan](https://github.com/adchiche/BTS_DEVSECOPS_CYBER_1/actions/workflows/snyk-scan.yml/badge.svg)
+![Gitleaks - Secret Scan](https://github.com/adchiche/BTS_DEVSECOPS_CYBER_1/actions/workflows/gitleaks.yml/badge.svg)
+![Snyk Vulnerability Score](https://snyk.io/test/github/OWNER/REPO/badge.svg)
 # 🕵️‍♀️ TP DevSecOps : Projet Node.js vulnérable
 
 ## Bienvenue !
