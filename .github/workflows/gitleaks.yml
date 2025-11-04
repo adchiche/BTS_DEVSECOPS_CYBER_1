@@ -1,22 +1,18 @@
-run-name: Gitleaks Scan
-name: Gitleaks Scan
+name: Détection de secrets Gitleaks
 
-on:
-  push:
-    branches: [main]
+on: [push]
 
 jobs:
-  gitleaks-scan:
+  gitleaks:
     runs-on: ubuntu-latest
+    
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - name: Récupération du code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Scan secrets with GitLeaks
-        run: |
-          # Install gitleaks
-          wget https://github.com/gitleaks/gitleaks/releases/download/v8.18.4/gitleaks_8.18.4_linux_x64.tar.gz
-          tar -xzf gitleaks_8.18.4_linux_x64.tar.gz
-          chmod +x gitleaks
-          # Run gitleaks scan
-          ./gitleaks detect --source . --verbose
+      - name: Exécution de Gitleaks
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
